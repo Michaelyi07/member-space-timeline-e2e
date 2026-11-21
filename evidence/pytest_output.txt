@@ -1,0 +1,22 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.14, pytest-9.1.1, pluggy-1.6.0 -- <home>\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: <repo>
+configfile: pytest.ini
+plugins: anyio-4.16.0
+collecting ... collected 12 items
+
+tests/test_e2e.py::test_c1_timeline_types_and_reverse_chronological PASSED [  8%]
+tests/test_e2e.py::test_c1_every_record_has_source_module_and_jump_link PASSED [ 16%]
+tests/test_e2e.py::test_c1_ordering_is_time_based_not_insertion_based PASSED [ 25%]
+tests/test_e2e.py::test_c1_literal_enum_order_when_times_are_visit_newest PASSED [ 33%]
+tests/test_e2e.py::test_c1_multi_contact_rolls_up_without_overwriting_recency PASSED [ 41%]
+tests/test_e2e.py::test_c2_recency_updates_each_step_and_equals_latest PASSED [ 50%]
+tests/test_e2e.py::test_c2_recency_never_regresses_on_out_of_order_writes PASSED [ 58%]
+tests/test_e2e.py::test_c2_recency_is_sourced_from_timeline_rows PASSED  [ 66%]
+tests/test_e2e.py::test_c3_monthly_active_includes_target_excludes_control PASSED [ 75%]
+tests/test_e2e.py::test_c3_prior_month_window_flips_membership PASSED    [ 83%]
+tests/test_e2e.py::test_c3_month_boundary_inclusive_of_first_day PASSED  [ 91%]
+tests/test_e2e.py::test_c3_soft_deleted_interaction_not_counted PASSED   [100%]
+
+============================= 12 passed in 6.67s ==============================
